@@ -39,5 +39,35 @@
     const p = document.getElementsByTagName("p")[0];
     const ul = document.getElementsByTagName("ul")[0];
     // Your code goes here
+
+    ul.firstElementChild.style.background = 'green';
+
+    var li = ul.getElementsByTagName('li');
+
+    let array = [ ...li ];
+
+    array.forEach( i => i.style.background = 'purple' );
+
+    // for (let i of array) {
+    //   i.style.background = 'purple';
+    // }
+
+    // for (let i of li) {
+    //   i.style.background = 'green';
+    // };
+
+    // console.log(li[0]);
+    var lastItemInList = li[li.length - 1];
+
+    lastItemInList.style.color = ('pink');
+
+    var middleItemInList = li[Math.floor(li.length / 2)];
+    
+    middleItemInList.previousElementSibling.style.color = 'coral';
+    console.dir(middleItemInList);
+    middleItemInList.nextElementSibling.style.color = 'aquamarine';
+
+    
+    
   </script>
 </html>

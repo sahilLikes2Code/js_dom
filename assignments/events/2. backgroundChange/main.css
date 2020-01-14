@@ -1,0 +1,11 @@
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+button {
+    background-color: aquamarine;
+    border: 2px solid black;
+    color: black;
+    padding: 10px 20px;
+}

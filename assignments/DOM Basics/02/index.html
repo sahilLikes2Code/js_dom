@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Accessing Elements in the DOM</title>
 
     <style>
@@ -47,6 +46,33 @@
     <div class="demo-query-all">Access me by query all (2)</div>
     <script>
       // your code goes here
+
+      var elementsWithIdDemo = document.getElementById('demo');
+      elementsWithIdDemo.style.border = '1px solid purple';
+
+      var elementsWithClassDemo = document.getElementsByClassName('demo');
+      for (let i of elementsWithClassDemo) {
+        i.style.border = '1px solid orange';
+      }
+
+      var elementsWithTagNameArticle = document.getElementsByTagName('article');
+      for (let i of elementsWithTagNameArticle) {
+        i.style.border = '1px solid blue';
+      }
+
+
+
+      var elementWithIdDemoQuery = document.querySelector('#demo-query');
+      elementWithIdDemoQuery.style.border = '1px solid grey';
+
+      var elementWithClassDemoQueryAll = document.querySelectorAll('.demo-query-all');
+
+      for (let i of elementWithClassDemoQueryAll) {
+        i.style.border = '1px solid green';
+
+      }
+
+
     </script>
   </body>
 </html>

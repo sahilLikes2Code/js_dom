@@ -1,4 +1,4 @@
-Use the below instruction and solve it using `index.html` file. Write JavaScript in the `script` tag.
+Follow the instructions below and solve using `index.html` file. Write JavaScript in the `script` tag.
 
 1. Select the element with an id of `demo` and apply style `1px solid purple` on that.
 2. Select all the elements by class name of `demo` and apply the style `1px solid orange` to each element.
